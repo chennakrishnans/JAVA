@@ -22,7 +22,7 @@ class reduce
         }
         s++;
    }
-   System.out.println("The no.of.steps:"+s);
+   System.out.println("The number of steps:"+s);
   }
   catch(Exception e)
   {
