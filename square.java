@@ -7,9 +7,9 @@ try
 {
  Scanner sc=new Scanner(System.in);
  int i;
- System.out.println("Enter lower number: ");
+ System.out.println("Enter lower range: ");
  int l=sc.nextInt();
- System.out.println("Enter upper number: ");
+ System.out.println("Enter upper range: ");
  int u=sc.nextInt();
  if(l>u)
  {
@@ -27,6 +27,7 @@ try
   }
  else
  {
+  
    for (i = l; i <= u; i++)
  {
   if (Math.sqrt(i) == (int)Math.sqrt(i))
