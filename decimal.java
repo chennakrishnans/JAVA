@@ -1,21 +1,25 @@
+import java.io.*;
 import java.util.*;
-public class decimal
+class dec_convert
 {
- public static void main(String args[]) 
-{
-try
-{
- Scanner sc = new Scanner(System.in);
- double num,cube;
- System.out.print("Enter the number: ");
- num = sc.nextDouble();
- System.out.println("Square of " + num + " is: " + Math.pow(num, 2));
- cube=num*num*num;
- System.out.println("Cube of "+num+" is: "+cube);
- }
-catch(Exception e)
-{
-System.out.println("Enter valid number");
-}
-}
+  public static void main(String args[])
+  {
+    try
+    {
+       int num;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("\nEnter the number :");
+       num = Integer.parseInt(sc.nextLine());
+       String hexa = Integer.toHexString(num);
+       System.out.println("HexaDecimal Value is : " + hexa);
+       String octal = Integer.toOctalString(num);
+       System.out.println("Octal Value is : " + octal);
+       String binary = Integer.toBinaryString(num);
+       System.out.println("Binary Value is : " + binary);
+    }
+    catch(Exception e)
+    {
+      System.out.println("Due to character exception");
+     }
+   }
 }
