@@ -1,21 +1,24 @@
+import java.io.*;
 import java.util.*;
-class aggregate 
+class aggregate
 {
-    public static void main(String[] args) {
-        try {
-            float m1, m2, m3, m4;
-            Scanner sc = new Scanner(System.in);
-            System.out.println("enter marks in python:");
-            m1 = sc.nextFloat();
-            System.out.println("enter marks in c programming:");
-            m2 = sc.nextFloat();
-            System.out.println("enter marks in mathematics:");
-            m3 = sc.nextFloat();
-            System.out.println("enter marks in physics:");
-            m4 = sc.nextFloat();
-            if (m1 > 100  || m2 > 100 || m3 > 100 || m4 > 100)
-            {
-                throw new NullPointerException("invalid due to higher values.");
+  public static void main(String[] args)
+ {
+   try
+    {
+       float m1,m2,m3,m4;
+	Scanner sc=new scanner(System.in)
+	System.out.println("Enter the marks in python:");
+	m1=sc.nextFloat();
+	System.out.println("Enter the marks in C programming:");
+	m2=sc.nextFloat();
+	System.out.println("Enter the marks in Mathamatics:");
+	m3=sc.nextFloat();
+	System.out.println("Enter the marks in Physics:");
+	m4=sc.nextFloat();
+if(m1<100||m2<100||m3<100||m4<100)
+{
+  throw new NullPointerException("invalid due to higher values.");
             }
             if (m1 <0  || m2 <0 || m3 <0 || m4 <0)
             {
